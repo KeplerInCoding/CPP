@@ -1,3 +1,6 @@
+//input 3 num and print it's sum
+
+
 #include <iostream>
 using namespace std;
 int main()
