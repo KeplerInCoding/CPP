@@ -1,0 +1,111 @@
+#include <bits/stdc++.h>
+
+int main()
+{
+   int n;
+   scanf("%d",&n);
+
+   if(n==1)
+   printf("one");
+   else if(n==2)
+   printf("two");
+   else if(n==3)
+   printf("three");
+   else if(n==4)
+   printf("four");
+   else if(n==5)
+   printf("five");
+   else if(n==6)
+   printf("six");
+   else if(n==7)
+   printf("seven");
+   else if(n==8)
+   printf("eight");
+   else if(n==9)
+   printf("nine");
+   else
+   printf("Greater than 9");
+
+   return 0;
+}
+
+
+
+
+
+
+
+
+
+#include <cstdio>
+
+int max(int,int,int,int);
+int main()
+{
+   int a, b, c, d;
+   scanf("%d%d%d%d", &a, &b ,&c, &d);
+   printf("%d",max(a,b,c,d));
+}
+
+int max( int a, int b, int c, int d)
+{
+   int m, x, n;
+   m=a>b?a:b;
+   n= m>c?m:c;
+   x= n>d?n:d;
+
+   return x;
+}
+
+
+
+
+
+
+
+
+
+#include <cmath>
+#include <cstdio>
+
+void nw(int*, int*);
+int main()
+{
+   int a, b;
+   scanf("%d %d", &a, &b);
+   nw(&a,&b);
+   printf("%d\n%d", a,b);
+   return 0;
+}
+
+void nw(int* m, int* n)
+{
+   int a, b;
+   a= *m+*n;
+   b= abs(*m-*n);
+   *m=a;
+   *n=b;
+}
+
+
+
+
+
+
+
+
+
+
+#include <cstdio>
+
+int main()
+{
+   int n;
+   scanf("%d",&n);
+   int a[n];
+   for(int i=0; i<n; i++)
+   scanf("%d", &a[i]);
+   for(int i=n-1; i>=0; i--)
+   printf("%d ", a[i]);
+   return 0;
+}
